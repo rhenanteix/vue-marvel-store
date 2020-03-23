@@ -1,0 +1,136 @@
+$default-space-container: 50px;
+$default-margin-bottom: 50px;
+$default-font-size: 20px;
+
+.store-checkout-details {
+  padding-top: $default-space-container;
+  padding-bottom: $default-space-container;
+
+  .checkout-details-header {
+    margin-bottom: $default-margin-bottom;
+
+    .details-header-title {
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+  .checkout-details-body {
+    margin-bottom: $default-margin-bottom;
+
+    .details-body-products {
+      border: 1px solid #959595;
+
+      .products-list--empty {
+        padding: 40px;
+        text-align: center;
+      }
+
+      .products-list {
+        .products-item {
+          display: grid;
+          grid-template-columns: 35% 15% 25% 25%;
+          border-bottom: 1px solid #959595;
+
+          &:last-of-type {
+            border-bottom: none;
+          }
+
+          .item-price, .item-total {
+            font-size: $default-font-size;
+            font-weight: bold;
+          }
+
+          .item-info {
+            padding: 40px;
+
+            .info-image {
+              max-width: 70px;
+              overflow: hidden;
+              margin-right: 20px;
+
+              img {
+                max-width: 100%;
+              }
+            }
+
+            .info-title {
+              h3 {
+                font-size: $default-font-size;
+                font-weight: bold;
+                margin-bottom: 5px;
+              }
+            }
+          }
+
+          .item-info, .item-qtd, .item-price {
+            &:after {
+              content: '';
+              width: 1px;
+              height: 50px;
+              background-color: #959595;
+              right: 0px;
+              position: absolute;
+              top:37%;
+            }
+          }
+
+          .item-qtd {
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+
+            .item-qtd-values {
+              input {
+                max-width: 70%;
+              }
+            }
+
+            .item-qtd-decrement, .item-qtd-increment {
+              button {
+                font-size: $default-font-size;
+                color: #fff;
+                border: none;
+                background-color: #333;
+                padding: 0 8px;
+
+                &:disabled {
+                  cursor: not-allowed;
+                  background-color: #ccc;
+                }
+              }
+            }
+          }
+
+          .item-delete {
+            position: absolute;
+            right: -25px;
+            top: 40%;
+
+          }
+        }
+      }
+    }
+
+    .details-body-subtotal {
+      border-left: 1px solid #959595;
+      border-bottom: 1px solid #959595;
+      border-right: 1px solid #959595;
+      background-color: #ebebeb;
+
+      .values-subotal {
+        font-weight: bold;
+        font-size: 28px;
+        background-color: #fff;
+        padding: 20px;
+      }
+    }
+
+  }
+
+  .checkout-details-footer {
+    .btn {
+      font-size: 18px;
+      margin-right: 15px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "sliders": [
+    {
+      "id": 0,
+      "image": "local-api/slideshow/images/slide1.jpg",
+      "title": "The hunt for wolverine kicks off this april",
+      "description": "Charles soule and david marquez unravel the mystery",
+      "link": "#"
+    },
+    {
+      "id": 1,
+      "image": "local-api/slideshow/images/slide2.jpg",
+      "title": "Get ready for the movie as Will Corona Pilgrim previews issue #2 of the comic!",
+      "description": "Can’t wait for Marvel Studios, we have some good news.",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "image": "local-api/slideshow/images/slide3.jpg",
+      "title": "Get a refresher before the Season 2 premiere",
+      "description": "With Marvel Animated Minimates Series 8 now available at Walgreens!",
+      "link": "#"
+    }
+  ]
+}
